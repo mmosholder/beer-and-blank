@@ -1,0 +1,144 @@
+
+/***** Global *****/
+body {
+	font-family: "PT Sans", sans-serif;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.teal {
+	color: #333;
+	font-weight: 700;
+	border-bottom: 3px solid #696ec0;
+}
+a.teal:hover {
+	color: #696ec0;
+}
+
+.icon {
+	width: 64px;
+	height: 64px;
+}
+
+.arrow {
+	margin-left: 5px;
+}
+
+.columns {
+	margin-top: 3%;
+}
+
+.no-padding {
+	padding: 0;
+}
+.fa {
+	font-size: 40px;
+	color: #696ec0;
+}
+
+img {
+	max-width: 100%;
+}
+/* ----------------------------------
+-------------------------------------
+---------------end Global Styles */
+header {
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
+}
+.logo {
+	display: inline-block;
+	width: 70px;
+}
+
+header h3 {
+	display: inline-block;
+	margin: 5px 5px 5px 20px;
+	vertical-align: middle;
+}
+
+/*-----------------------------Home Page & Nav Styles -------------------
+--------------------------------------------------------- */
+.content {
+	margin-top: 30px;
+}
+.pdf-photo {
+	width: 35%;
+	margin-top: 30px;
+}
+
+/* ------------------------------------------------------- 
+Portfolio Page ---------------------------------------- */
+
+
+
+/* ------------------------------------------------------- 
+MEDIA QUERIES ---------------------------------------- */
+
+@media (max-width: 1660px) {
+	
+	.main-nav {
+		width: 100%;
+	}
+
+	.beer-logo {
+		width: 180px;
+	}
+
+	nav > ul {
+		font-size: 3.12em;
+		padding-top: 10px;
+	}
+
+	ul.secondary-nav li {
+		width: 14%;
+		margin: 0 2% 0 0;
+	}
+
+	section {
+		padding-top: 14%;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+	body {
+		font-size: 1.1em;
+	}
+
+	header {
+		width: 100%;
+		height: 180px;
+	}
+
+	.beer-logo {
+		width: 150px;
+	}
+
+	ul.secondary-nav {
+		width: 97%;
+	}
+
+	ul.secondary-nav li {
+		padding: 0;
+		width: 14%;
+		display: inline;
+		margin: 0 3% 0 0;
+	}
+}
+
+/* if portrait mode is detected, rotate the entire site -90 degrees to hint rotating to landscape */
+@media (orientation: portrait) {
+  body {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
